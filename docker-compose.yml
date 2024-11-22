@@ -1,0 +1,32 @@
+services:
+  database:
+    image: postgres:latest
+    container_name: database-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./Flight_Booking_backend
+    container_name: backend
+    depends_on:
+      - database
+    environment:
+      - DATABASE_URL=postgres://postgres:mysecretpassword@database:5432/postgres
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./Flight_Booking_frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+
+volumes:
+  db_data:
