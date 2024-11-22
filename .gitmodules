@@ -1,0 +1,6 @@
+[submodule "Flight_Booking_backend"]
+	path = Flight_Booking_backend
+	url = https://github.com/TheL0L/Flight_Booking_backend
+[submodule "Flight_Booking_frontend"]
+	path = Flight_Booking_frontend
+	url = https://github.com/TheL0L/Flight_Booking_frontend
