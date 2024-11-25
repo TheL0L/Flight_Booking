@@ -14,9 +14,9 @@ To pull updates for all submodules, run:
 ```
 
 ## Usage
-1. use `docker-compose` to build and run the containers for the backend, frontend, and database:
+1. Use `docker-compose` to build and run the containers for the backend, frontend, and database:
 ```
 	docker-compose up --build
 ```
 
-2. Navigate to the locally hosted* [Flight Booking](https://localhost:3000/) website.
+2. Navigate to the locally hosted [Flight Booking](https://localhost:3000/) website.
