@@ -19,4 +19,4 @@ To pull updates for all submodules, run:
 	docker-compose up --build
 ```
 
-2. Navigate to the locally hosted [Flight Booking](https://localhost:3000/) website.
+2. Navigate to the locally hosted [Flight Booking](http://localhost:3000/) website.
